@@ -1,0 +1,57 @@
+<div class = "row expand" style = "text-align:justify;">
+<div class="container">
+
+<div class = "jumbotron" style = "padding:10px;">
+
+  <div class="panel-group" id="accordion">
+    <div class="panel panel-default" ng-repeat = "company in Companies">
+      <div class="panel-heading">
+		<div class = "row">
+		<div class = "col-lg-2 col-md-2 col-sm-2">
+		<a data-toggle="collapse" data-parent="#accordion" href="#{{company.Colapse}}">
+		<img ng-src = "{{company.LogoPath}}" style = "width:130px;height:70px;">
+		</a>
+		
+		</div>
+		<div class = "col-lg-3 col-md-3 col-sm-3">
+	    <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#{{company.Colapse}}">{{company.CompanyTitle}}</a>
+		  
+        </h4>
+		</div>
+		<div class = "col-lg-3 col-md-3 col-sm-3">
+	    <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#{{company.Colapse}}">{{company.CompanyLocation}}</a>
+		  
+        </h4>
+		</div>
+		<div class = "col-lg-3 col-md-3 col-sm-3">
+	    <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#{{company.Colapse}}">{{company.CompanyWorking}}</a>
+		  
+        </h4>
+		</div>
+		</div>
+
+		
+
+      </div>
+      <div id="{{company.Colapse}}" class="{{company.ColapseClass}}">
+        <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+      </div>
+    </div>
+
+  </div>
+
+
+</div>
+
+
+
+</div>
+
+</div>
+
+

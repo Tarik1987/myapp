@@ -1,0 +1,152 @@
+<div class = "container">
+
+		     <modal visible="showModal">
+             
+             </modal>
+
+<div class = "row expand" style = "text-align:justify;">
+
+  	  <div class = "container">
+
+	  <div class = "jumbotron">
+	  
+	  <div class = "row" style = "margin-bottom:25px;">
+	  
+	  <div class = "col-lg-1 col-md-1 col-sm-1">
+	  <span id ="span01" class="glyphicon glyphicon-hand-right" aria-hidden="true"></span>
+	  </div>
+	  <div class = "col-lg-8 col-md-8 col-sm-8">
+	    <p>{{MainParagraphText}}</p>
+	  </div>
+	  
+	  </div>
+	  
+	  <div class = "row" style = "margin-bottom:25px;">
+	  
+	  <div class = "col-lg-1 col-md-1 col-sm-1">
+	  <span id = "span02" class="glyphicon glyphicon-hand-right" aria-hidden="true"></span>
+	  </div>
+	  <div class = "col-lg-8 col-md-8 col-sm-8">
+	      <p>{{SecondParagraphText}}</p> 
+	  </div>
+	  
+	  <div style = "text-align:center;" class = "col-lg-3 col-md-3 col-sm-3">
+	  
+	   <img ng-click ="toggleModal('images/zagreb.jpg','Picture of Zagreb')" src="images/zagreb.jpg" style = "width:160px;height:140px;cursor:pointer;cursor:hand;" class="img-thumbnail" alt="Picture of Zagreb" >
+	  
+	  </div>
+	  
+	  </div>
+	  
+	  
+	  <div class = "row" style = "margin-bottom:25px;">
+	  <div class = "col-lg-1 col-md-1 col-sm-1">
+	  <span id = "span03" class="glyphicon glyphicon-hand-right" aria-hidden="true"></span>
+	  </div>
+	  <div class = "col-lg-8 col-md-8 col-sm-8">
+	       <p>{{ThirdParagraphText}}</p>
+		   
+	  </div>
+	  
+	  <div  style = "text-align:center;" class = "col-lg-3col-md-3 col-sm-3">
+	  
+	   <img ng-click ="toggleModal('images/bosanska_krupa.jpg','Picture of Bosanska Krupa')" src="images/bosanska_krupa.jpg" class="img-thumbnail" style = "width:160px;height:140px;cursor:pointer;cursor:hand;" alt="Picture of Bosanska Krupa" >
+	  
+	  </div>
+	  
+	  
+	  </div>
+
+	  <div class = "row" style = "margin-bottom:25px;">
+	  <div class = "col-lg-1 col-md-1 col-sm-1">
+	  <span id = "span04" class="glyphicon glyphicon-hand-right" aria-hidden="true"></span>
+	  </div>
+	  <div class = "col-lg-8 col-md-8 col-sm-8">
+	       <p>{{FourthParagraphText}}</p>
+		   
+	  </div>
+	  
+	  <div  style = "text-align:center;" class = "col-lg-3col-md-3 col-sm-3">
+	  
+	   <img ng-click ="toggleModal('images/dzeko.jpg','(D)zeko')" src="images/dzeko.jpg" class="img-thumbnail" style = "width:160px;height:140px;cursor:pointer;cursor:hand;" alt="(D)zeko" >
+	  
+	  </div>
+	  
+	  
+	  </div>
+
+	  <div class = "row">
+	  <div class = "col-lg-1 col-md-1 col-sm-1">
+	  <span id = "span04" class="glyphicon glyphicon-hand-right" aria-hidden="true"></span>
+	  </div>
+	  <div class = "col-lg-8 col-md-8 col-sm-8">
+	       <p>{{FifthParagraphText}}</p>
+		   
+	  </div>
+	  
+	  <div  style = "text-align:center;" class = "col-lg-3col-md-3 col-sm-3">
+	  
+	   <img ng-click ="toggleModal('images/lecture.jpg','Me as a lecturer')" src="images/lecture.jpg" class="img-thumbnail" style = "width:160px;height:140px;cursor:pointer;cursor:hand;" alt="Me as a lecturer" >
+	  
+	  </div>
+	  
+	  
+	  </div>
+	  
+
+	  
+	
+
+	 </div>
+
+	</div>
+
+
+</div>
+
+ <script>
+ 
+
+
+ (function($) {
+    var $window = $(window),
+        $html = $('html');
+    
+    function resize() {
+	    
+
+        if ($window.width() < 768) {
+	
+			$('#span01').removeClass('glyphicon glyphicon-hand-right');
+			$('#span02').removeClass('glyphicon glyphicon-hand-right');
+			$('#span03').removeClass('glyphicon glyphicon-hand-right');
+			
+            $('#span01').addClass('glyphicon glyphicon-hand-down');
+			$('#span02').addClass('glyphicon glyphicon-hand-down');
+			$('#span03').addClass('glyphicon glyphicon-hand-down');
+		
+
+        }
+		else
+		{
+		
+			$('#span01').removeClass('glyphicon glyphicon-hand-down');
+			$('#span02').removeClass('glyphicon glyphicon-hand-down');
+			$('#span03').removeClass('glyphicon glyphicon-hand-down');
+			
+            $('#span01').addClass('glyphicon glyphicon-hand-right');
+			$('#span02').addClass('glyphicon glyphicon-hand-right');
+			$('#span03').addClass('glyphicon glyphicon-hand-right');		
+		   
+		}
+
+    }
+
+    $window
+        .resize(resize)
+        .trigger('resize');
+})(jQuery);
+ 
+ 
+
+  </script>
